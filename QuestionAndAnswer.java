@@ -1,21 +1,4 @@
-/*
-Author: Blane Staskiewicz
-E-mail: bas6248@psu.edu
-Course: CMPSC 221
-Assignment: Programming Assignment 2
-Due date: 2/18/2020
-File: got_trivia.java
-Purpose: Java application that is a trivia game for Game of Thrones,
-  that uses a GUI.
-Compiler/IDE: Java SE Development Kit 13.0.2/Eclipse Foundation
-  IDE 2019-12
-Operating system: macOS Catalina Version 10.15.2
-Reference(s): Java 10 API - Oracle Documentation
-  (https://docs.oracle.com/javase/10/docs/api/)
-  Chapters 3, 4, 5 Lecture Slides
-  JOptionPane Default Text
-  (https://stackoverflow.com/questions/6762971/java-joptionpane-default-text)
-*/ 
+//Description: Java application that is a trivia game for Game of Thrones, that uses a GUI.
 
 package qanda;
 import javax.swing.JOptionPane;
