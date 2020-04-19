@@ -2,6 +2,15 @@
 
 These are the programs for CMPSC221 at Penn State University. The GoT Trivia program utilizes JOptionPane from swing to make a GUI.
 
+## Packages and Imports
+
+```Java
+package qanda;
+import java.util.*;
+import javax.swing.JOptionPane;
+import qanda.QuestionAndAnswer;
+```
+
 ## Screen Shots from GoT Trivia:
 
     The Welcome GUI when running the program:
@@ -11,5 +20,5 @@ These are the programs for CMPSC221 at Penn State University. The GoT Trivia pro
 
     A sample question from GoT:
 
-<img src ="images_/trivia_question.png" width="400">
+<img src ="images_/trivia_question.png" width="450">
 
