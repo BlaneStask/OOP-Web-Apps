@@ -3,7 +3,6 @@
 package qanda;
 import java.util.*;
 import javax.swing.JOptionPane;
-import qanda.QuestionAndAnswer;
 
 public class got_trivia{
 	//maximum number of questions 
