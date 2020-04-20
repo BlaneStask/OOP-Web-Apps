@@ -8,7 +8,6 @@ These are the programs for CMPSC221 at Penn State University. The GoT Trivia pro
 package qanda;
 import java.util.*;
 import javax.swing.JOptionPane;
-import qanda.QuestionAndAnswer;
 ```
 
 ## Screen Shots from GoT Trivia:
