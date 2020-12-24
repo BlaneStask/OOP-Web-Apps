@@ -1,6 +1,6 @@
 # Object Oriented Programming with Web-Based Applications
 
-These are the programs for CMPSC221 at Penn State University. The GoT Trivia program utilizes JOptionPane from swing to make a GUI.
+These are the programs for CMPSC221 at Penn State University. In this course we worked on advanced object-oriented principles and their application to web-based, net-centric computing, virtual machines, intermediate code generation (Java-specific), graphical user interfaces (GUI) design, event handling, server-side programming with database queries, security, and permissions and file management concepts for client/server systems. The GoT Trivia program utilizes JOptionPane from swing to make a GUI.
 
 ## Packages and Imports
 
