@@ -3,13 +3,13 @@
 package qanda;
 import javax.swing.JOptionPane;
 
-public class QuestionAndAnswer {
+public class QuestionAndAnswer{
 	/** This method asks the question, trims and uppercases the answer
 	 * 
 	 * @param question	outputs question string
 	 * @return ans		returns answer to question
 	 */
-	public String setQuestion(String Question) {
+	public String setQuestion(String Question){
 		String prompt = Question;
 		String title =  "GoT Trivia Game";
 		String input = (String)JOptionPane.showInputDialog(null, prompt, title, JOptionPane.QUESTION_MESSAGE, null, null, "Your answer?");
@@ -26,13 +26,13 @@ public class QuestionAndAnswer {
 	 * 
 	 * @param answer res	strings to compare	
 	 */
-	public void setAnswer(String Answer, String Res) {
-		if(Answer.equals(Res)) {
+	public void setAnswer(String Answer, String Res){
+		if(Answer.equals(Res)){
 			String prompt = "You are Right!";
 			String title =  "GoT Trivia Game";
 			javax.swing.JOptionPane.showMessageDialog(null, prompt, title, JOptionPane.INFORMATION_MESSAGE);
 		}
-		else {
+		else{
 			String prompt = "You are Wrong.";
 			String title =  "GoT Trivia Game";
 			javax.swing.JOptionPane.showMessageDialog(null, prompt, title, JOptionPane.INFORMATION_MESSAGE);
