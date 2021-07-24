@@ -1,30 +1,38 @@
-//Description: This program takes a VIN number from the user and outputs values and 
-//attributes for a valid VIN number
-
 import java.util.Scanner;
 
+/**
+* <h1>Vin Decoder</h1>
+* This program takes a VIN number from the user 
+* and outputs values and attributes for a valid 
+* VIN number.
+*
+* @author  Blane Staskiewicz
+*/
 public class vindecoder{
-	/** This method is the main/driver method.
-	 * 
-	 * @call		calls other methods for values
-	 */
+	
+	/** 
+	* This method is the main/driver method.
+	* 
+	* @param args  Unused
+	*/
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Please enter a string representing a Vehicle Identification Number (VIN):");
 		String vinn = s.nextLine();
 		System.out.println();
-		//change string to all upper case, trim spaces and replaces all spaces
+		
+		// change string to all upper case, trim spaces and replaces all spaces
 		String vin = vinn.toUpperCase().trim().replaceAll(" ", "");
 		System.out.println("VIN entered by user:");
 		System.out.println(vin);
 		
-		//checks to make sure the length is 17
+		// checks to make sure the length is 17
 		if(vin.length() != 17){
 			System.out.print("** VIN must contain 17 characters **");
 			anotherVin(s);
 			System.exit(0);
 		}
-		//compares input VIN to a string of special characters
+		// compares input VIN to a string of special characters
 		String schars = "!@#$%^&*()[]{}|?/><,.:;'~+=-_";
 		for(int i = 0; i <= vin.length() - 1; i++) {
 			for(int j = 0; j <= schars.length() - 1; j++){
@@ -45,11 +53,12 @@ public class vindecoder{
 		
 		anotherVin(s);
 	}
-	/** This method gets the values by group.
-	 * 
-	 * @param vin	substrings of the VIN
-	 * @print		outputs values of VIN
-	 */
+	
+	/** 
+	* This method gets the values by group.
+	* 
+	* @param vin  substrings of the VIN
+	*/
 	public static void values(String vin){
 		System.out.println("Values by group:");
 		System.out.print("World Manufacturer Identifier (WMI): ");
@@ -60,11 +69,12 @@ public class vindecoder{
 		System.out.println(vin.substring(9, 17));
 		System.out.println();
 	}
-	/** This method gets the attributes of the Vehicle.
-	 * 
-	 * @param vin	charAt for the location
-	 * @print		outputs attributes of VIN
-	 */
+	
+	/** 
+	* This method gets the attributes of the Vehicle
+	* 
+	* @param vin  charAt for the location
+	*/
 	public static void attributes(String vin){
 		System.out.println("Vehicle attributes:");
 		
@@ -215,11 +225,12 @@ public class vindecoder{
 		System.out.print("Serial number: ");
 		System.out.println(vin.substring(11, 17));
 	}
-	/** This method asks for another VIN.
-	 * 
-	 * @param s		value of input check
-	 * @call		calls main if yes, anotherVin if not proper input, ends if no
-	 */
+	
+	/** 
+	* This method asks for another VIN.
+	* 
+	* @param s  scanner for user input
+	*/
 	public static void anotherVin(Scanner s){
 		System.out.println();
 		System.out.print("Enter another VIN (Y/N)? ");
